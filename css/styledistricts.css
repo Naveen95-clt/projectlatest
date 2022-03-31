@@ -1,0 +1,46 @@
+*
+{
+    border: 0;
+    padding: 0;
+}
+.title
+{
+    text-align: center;
+    
+}
+.title h2{
+    text-decoration: underline;
+    padding: 25px;
+}
+.title p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px;
+}
+.container
+{
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+.container .card{
+    padding-top: 10px;       
+}
+
+.button{
+    text-align: center;
+    padding-bottom: 40px;
+   
+}
+.moreinfo h3{
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 25px;
+}
+.button2{text-align: center;
+padding-bottom: 30px;}
+
+footer{
+    text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}

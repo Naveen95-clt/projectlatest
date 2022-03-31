@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-size: cover;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    overflow: hidden;
+    background-color: rgb(120,120,120);
+    padding: 20px 10px;
+    height: 90px;
+   
+  }
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 25px;
+    border-radius: 4px;
+    
+  }
+
+.header .logo{
+    position: relative;
+    bottom: 20px;
+    
+}
+.d-flex
+{
+  float: right;
+  position: relative;
+  top: 5px;
+}
+.d-flex .btn
+{
+  color: white;
+}
+
+.login
+{
+  padding: 200px;
+  padding-top: 100px;
+  padding-left: 500px;
+  padding-right: 500px;
+}
+
+body{
+  background-color: bisque;
+}

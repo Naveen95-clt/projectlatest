@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    overflow: hidden;
+    background-color: rgb(120,120,120);
+    padding: 20px 10px;
+    height: 90px;
+   
+  }
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 25px;
+    border-radius: 4px;
+    
+  }
+
+.header .logo{
+    position: relative;
+    bottom: 20px;
+    
+}
+.d-flex
+{
+  float: right;
+  position: relative;
+  top: 5px;
+}
+.d-flex .btn
+{
+  color: white;
+}
+.intro{
+  padding: 35px;
+}
+.intro h4{
+  text-align: center;
+  text-decoration: underline;
+}
+.intro p{
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(50,50,50);
+}
+
+.header-right a:hover{
+  background-color: green;
+}
