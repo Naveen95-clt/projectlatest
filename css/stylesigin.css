@@ -3,6 +3,7 @@
     padding: 0;
 }
 body{
+     
     background-size: cover;
 }
 *{
@@ -53,6 +54,10 @@ body{
   padding-right: 500px;
 }
 
-body{
-  background-color: bisque;
+.container{
+  width: 30%;
+  margin-top: 100px;
+  border: 1px gray solid;
+  padding: 20px;
+  color: white;
 }
