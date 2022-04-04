@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.title
+{
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    color: gray;
+}
+.row{
+    margin: 25px;
+    text-align: center;
+    justify-content: center;
+}
