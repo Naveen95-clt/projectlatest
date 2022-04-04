@@ -70,3 +70,15 @@ background-color: DarkSalmon;
 color: white;
 margin-top: 150px;
 }
+.subscribe{
+  border: 1px solid gray;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 5%;
+  padding: 14px;
+  background-color: beige;
+}
+.subscribe .mybutton{
+  position: relative;
+  right: 5px;
+}
