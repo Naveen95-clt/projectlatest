@@ -45,3 +45,6 @@ footer{
   background-color: DarkSalmon;
   color: white;
 }
+.container .btn{
+height: 10px;
+}
