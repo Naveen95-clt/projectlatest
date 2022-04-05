@@ -3,6 +3,7 @@
     border: 0;
     padding: 0;
 }
+/* District Heading and Paragraph */
 .title
 {
     text-align: center;
@@ -16,35 +17,48 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 20px;
 }
-.container
-{
-    padding-top: 10px;
-    padding-bottom: 25px;
+/* End of District heading and paragraph */
+/* First card */
+.container4{
+    margin-left: 75px;
 }
-.container .card{
-    padding-top: 10px;       
-}
+.container4 .card-body{
+    text-align: center;
+}    
 
-.button{
+/* End of first cad */
+.button
+{
     text-align: center;
     padding-bottom: 40px;
+    padding-top: 25px;
    
-   
+ 
 }
 .moreinfo h3{
     text-align: center;
     text-decoration: underline;
     padding-bottom: 25px;
 }
-.button2{text-align: center;
-padding-bottom: 30px;}
+/* second card */
+.container2 .card-body{
+    text-align: center;
+
+}
+.container2{
+    margin-left: 45px;
+    margin-right: 45px;
+}
+/* End of second card */
+.button2{
+    text-align: center;
+padding-bottom: 30px;
+padding-top: 25px;
+}
 
 footer{
     text-align: center;
   padding: 3px;
   background-color: DarkSalmon;
   color: white;
-}
-.container .btn{
-height: 10px;
 }
