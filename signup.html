@@ -45,26 +45,26 @@
               <label for="name"><b>Name</b></label>
               <input type="text" placeholder="Enter Your Full Name" id="name" onkeyup="validateName()" required>
               <br>
-              <span id="name-error">error</span>
+              <span id="name-error"></span>
             </div>
              <br>
             <div class="part-2">
               <label for="Ph"><b>Phone Number</b></label>
-              <input type="text" placeholder="Enter Your Phone number" id="number" onkeyup="" required>
+              <input type="text" placeholder="Enter Your Phone number" id="number" onkeyup="validateNumber()" required>
               <br>
               <span id="number-error"></span>
             </div>
               <br>
             <div class="part-3">
               <label for="Email"><b>Email</b></label>
-              <input type="text" placeholder="Enter Your Email" id="email" onkeyup="" required>
+              <input type="text" placeholder="Enter Your Email" id="email" onkeyup="validateEmail()" required>
               <br>
               <span id="email-error"></span>
             </div>
                <br>
             <div class="part-4">
               <label for="pssw"><b>Password</b></label>
-              <input type="text" placeholder="Enter password" id="password" onkeyup="" required>
+              <input type="text" placeholder="Enter password" id="password" onkeyup="validatepassward()" required>
               <br>
               <span id="password-error"></span>
             </div>
@@ -82,6 +82,6 @@
             <button id="btn-signup">Sign Up</button>
         </div>
       </form>
-      
+      <script src="/script/signup.js"></script>
 </body>
 </html>
