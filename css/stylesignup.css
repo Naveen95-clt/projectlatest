@@ -53,17 +53,21 @@ span{
     right: 48%;
     
 }
-.strengthBox{
-    width: 213px;
-    height: 10px;
-    float: right;
-    background-color: gray;
-    margin-top: 0px;
-}
-.psstext{
-    position: absolute;
-    top: 499px;
-    right: 35%;
-    color: salmon;
 
+.passwordBox{
+    width: 217px;
+    height: 25px;
+    position: absolute;
+    right: 491px;
+    
+    background-color: gray;
+    border-radius: 5px;
+    border: gray;
+    text-align: center;
+}
+.passwordBox p{
+    text-align: center;
+    font-size: medium;
+    color: white;
+    font-weight: bold;
 }

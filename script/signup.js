@@ -1,7 +1,10 @@
 var nameError=document.getElementById("name-error");
-var emailError=document.getElementById("email-error");
-var passwordError=document.getElementById("password-error");
 var numberError=document.getElementById("number-error");
+var emailError=document.getElementById("email-error");
+var passwordBox=document.getElementsByClassName("passwordBox");
+var passwordChecker=document.getElementById("passwordText");
+
+
 
 
 function validateName(){
@@ -24,11 +27,11 @@ function validateNumber()
      numberError.innerText="*Please enter your number";
      return false;
  }
+ 
 
-
- if(!thenumber.match(/\d{3}[-. ]?\d{3}[-. ]?\d{4}/))
+ if(!thenumber.match(/^\d{3}[-. ]?\d{3}[-. ]?\d{4}$/))
  {
-    numberError.innerText="*Enter a valid format";
+    numberError.innerText="*Enter a valid number";
      return false;
      
  }   
@@ -38,9 +41,11 @@ function validateNumber()
     
 }
 
-function validateEmail(){
-    var theemail=document.getElementById("email");
-    if(theemail.length==0){
+function validateEmail()
+{
+    var theemail=document.getElementById("email").value;
+    if(theemail.length==0)
+    {
         emailError.innerText="*Please enter your email";
         return false;}
      if(!theemail.match(/^[A-Za-z0-9]+@[a-z0-9]+\.[a-z]{2,3}$/)) 
@@ -51,3 +56,52 @@ function validateEmail(){
  return true;
 
 }
+
+function validatePassword()
+{
+    var thepassword=document.getElementById("password").value;
+    let strongPassword = new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})')
+    let mediumPassword = new RegExp('((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{6,}))|((?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])(?=.{8,}))')
+    passwordChecker.style.color='white';
+    passwordChecker.innerText="Password Strength";
+
+    if(thepassword.length==0)
+    {
+    passwordChecker.innerText="Please Enter Password";
+    return false;
+    }
+    if(strongPassword.test(thepassword))
+    {
+        passwordChecker.innerText="STRONG";
+        passwordChecker.style.color='green';
+        
+        
+        
+        return true;
+    }
+    if(mediumPassword.test(thepassword))
+    {
+        passwordChecker.innerText=" MEDIUM";
+        passwordChecker.style.color='orange';
+        return false;
+    }
+    else{
+        passwordChecker.innerText="WEAK";
+        passwordChecker.style.color='red';
+        return false;
+    }
+    function validateForm()
+{
+    if(!validateEmail()||!validateName()||!validateNumber()||!validatePassword())
+    {
+        return false;
+    }
+        else{
+            
+            alert("Correct")
+            return true;
+        }
+    }
+
+}
+    
