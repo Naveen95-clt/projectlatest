@@ -24,13 +24,8 @@ function validateNumber()
      numberError.innerText="*Please enter your number";
      return false;
  }
- if(thenumber.length !==10){
-    numberError.innerText="*Please enter a 10 digit number";
-    return false;
-}
- if(!thenumber.match(/^[0-9]{10}$/))
-    {numberError.innerText="*Enter a valid number";
-    return false;}
+
+
  if(!thenumber.match(/\d{3}[-. ]?\d{3}[-. ]?\d{4}/))
  {
     numberError.innerText="*Enter a valid format";
