@@ -90,18 +90,10 @@ function validatePassword()
         passwordChecker.style.color='red';
         return false;
     }
-    function validateForm()
-{
-    if(!validateEmail()||!validateName()||!validateNumber()||!validatePassword())
-    {
-        return false;
-    }
-        else{
-            
-            alert("Correct")
-            return true;
-        }
-    }
+    
+
+    
+    
 
 }
     
