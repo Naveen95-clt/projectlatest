@@ -14,7 +14,7 @@ function validateName(){
       return false;
     }
    if(!thename.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
-       nameError.innerText="Enter Full Name"
+       nameError.innerText="Enter Full Name";
     }
     nameError.innerText=" ";
     return true;
