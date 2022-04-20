@@ -6,11 +6,9 @@ var passwordChecker=document.getElementById("passwordText");
 
 
 
-
-
 function validateName(){
     var thename=document.getElementById("name").value;
-    if(thename.length==0){
+    if(thename.length==0){                                
       nameError.innerText="*Enter your name";
       return false;
     }
@@ -63,6 +61,7 @@ function validatePassword()
     var thepassword=document.getElementById("password").value;
     let strongPassword = new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})')
     let mediumPassword = new RegExp('((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{6,}))|((?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])(?=.{8,}))')
+    let spacingCheck= new RegExp(/\s/)
     passwordChecker.style.color='white';
     passwordChecker.innerText="Password Strength";
 
@@ -71,6 +70,13 @@ function validatePassword()
     passwordChecker.innerText="Please Enter Password";
     return false;
     }
+    if(spacingCheck.test(thepassword)){
+        passwordChecker.innerText="Spaces not allowed";
+        passwordChecker.style.color='red';
+        return false;
+    }
+    
+    
     if(strongPassword.test(thepassword))
     {
         passwordChecker.innerText="STRONG";
@@ -104,3 +110,10 @@ if(!validateEmail()||!validateName()||!validateNumber()||!validatePassword())
 }
 
     
+function myFunction() {
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }}

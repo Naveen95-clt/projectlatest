@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/stylesignup.css">
     
     
+    
 </head>
 <body background="https://www.keralatourism.org/images/enchanting_kerala/large/jatayu_earth_s_centre_kerala_s_latest_addiction20181008064850_848_1.jpg ">
        <!-- Header starts here -->
@@ -66,9 +67,12 @@
                <br>
             <div class="part-4">
               <label for="pssw"><b>Password</b></label>
-              <input type="password" placeholder="Enter password" id="password" onkeyup="validatePassword()" required>
+              <input type="password" placeholder="Enter password"  id="password" onkeyup="validatePassword()" required>
+              <div class="checkbox">
+                <label><input type="checkbox" id="myCheck" onclick="myFunction()">Show</label>
+              </div>
               <br>
-              <span id="password-error"></span>
+            
             </div>
             <div class="passwordBox" style="border: 1px gray solid;"><p id="passwordText">Password Strength</p></div>
            
