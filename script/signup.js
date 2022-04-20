@@ -105,7 +105,7 @@ if(!validateEmail()||!validateName()||!validateNumber()||!validatePassword())
     alert("Please enter valid details")
     return false;}
     else{
-        alert("Sign In Successfull")
+        alert("Success")
     }
 }
 
