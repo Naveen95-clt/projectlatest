@@ -32,23 +32,38 @@
       </div>
       <!-- End of header -->
     <!-- Sign In Form -->
-    <div class="container">
-    <form>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    
+      <div class="container" style="border: 1px white solid;">
+      <form id="form">
+        <h2 id="heading">Sign In</h2>
+        <hr>
+        <div class="part-1">
+          <label for="name"><b>Name</b></label>
+          <input type="text" placeholder="Enter your Name"  id="name" onkeyup="validateName()">
+          <br>
+          <span id="errorName"></span>
+        </div>
+        <br><br>
+        <div class="part-2">
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Enter your Password" id="password" onkeyup="validatePassword()">
+          <span id="errorPassword"></span>
+        </div>
+        <br>
+        <div class="buttonSubmit">
+          <button id="signIn" onclick="validateForm()"><b>Sign In</b></button>
+        </div>
+        <div class="needAccount">
+          <p style="color: white;"><b>Need an Account?</b> <a href="signup.html">
+            Click Here
+          </a>
+          </p>
+          
+        </div>
+      </form>
       </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
-      </div>
-      
-      <button type="submit" class="btn btn-primary">Submit</button>
-      <div class="needanaccount">
-        <p>Need an account? <a href="signup.html"><button type="button" style="background-color: rgb(41, 41, 252);">Sign up</button> </a></p>
-      </div>
-    </form>
-    </div>
+     
+    <script src="./script/signin.js"></script>
+   
 </body>
 </html>

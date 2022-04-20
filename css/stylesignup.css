@@ -62,7 +62,7 @@ span{
     
     background-color: gray;
     border-radius: 5px;
-    border: gray;
+    border: rgb(75, 74, 74);
     text-align: center;
 }
 .passwordBox p{
@@ -71,3 +71,9 @@ span{
     color: white;
     font-weight: bold;
 }
+.d-flex input{
+    position: absolute;
+    height: 35px;
+    width: 220px;
+    right: 85px;
+  }

@@ -35,7 +35,7 @@
         </div>
       </div>
       <!-- End of header -->
-      <form action="#">
+      <form id="form" onsubmit="validateForm()">
         <div class="container">
           <h1>Sign Up</h1>
           <p>Please fill this form to create an account.</p>
@@ -81,7 +81,8 @@
               <p> (Password should contain minimum 8 characters, at least one uppercase, and one lower case, must contain at least one number)</p>
             </div>
             
-            <button id="btn-signup" onclick="return validateForm()">Sign Up</button>
+            <button id="btn-signup">Sign Up</button>
+            
         </div>
       </form>
       

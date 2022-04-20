@@ -7,6 +7,7 @@ var passwordChecker=document.getElementById("passwordText");
 
 
 
+
 function validateName(){
     var thename=document.getElementById("name").value;
     if(thename.length==0){
@@ -90,10 +91,16 @@ function validatePassword()
         passwordChecker.style.color='red';
         return false;
     }
-    
-
-    
-    
-
 }
+
+function validateForm(){
+if(!validateEmail()||!validateName()||!validateNumber()||!validatePassword())
+{
+    alert("Please enter valid details")
+    return false;}
+    else{
+        alert("Sign In Successfull")
+    }
+}
+
     
